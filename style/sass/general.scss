@@ -1,0 +1,89 @@
+
+
+.logo {
+  max-width: 90px !important;
+}
+
+.logo-simplifie {
+  max-width: 60px !important;
+}
+
+input[type="date"]::before{
+  content: attr(placeholder)" : ";
+  white-space: pre;
+}
+input[type="date"]:focus::before {
+  content:""!important;
+}
+
+#footer {
+  position:relative;
+  top:0;
+  left:0;
+  width:100%;
+  padding-bottom:10px;
+  background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-color: rgb(178, 74, 56);
+}
+
+
+  .espace-top {
+    margin-top: 17vh;
+  }
+
+  .espace-bottom {
+   padding-bottom: 17vh;
+  } 
+
+
+  .min-height{
+    min-height: 10vh;
+  }
+
+.size{
+  max-height: 70%;
+}
+
+
+
+  /* Pour le bouton globale de la fermeture des Popup*/
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+
+
+ /* Animations des "Fades" */
+
+  .fade-in-image { animation: fadeIn 7s; }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .fade-in-popup { animation: fadeIn 1s; }
+
+ @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+
+  .hide{
+
+    display: none !important;
+  }
+ 
+
+}
+
+

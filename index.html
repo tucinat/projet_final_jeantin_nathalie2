@@ -1,0 +1,379 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Fleurs&Senteurs</title>
+	<meta name="description" content="TP3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style/css/custom-bootstrap.css">
+	<link rel="stylesheet" href="./style/css/general.css" />
+	<link rel="icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <header id="mainNavigation">
+        <nav class="py-2 border-bottom border-primary">
+            <div class="container d-flex flex-wrap">
+                <ul class="nav me-auto align-items-center">
+                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">À propos</a></li>
+                    <li class="nav-item"><a href="boutique.html" class="nav-link link-dark px-2 survol">Boutique</a></li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item"><a href="inscription-connexion.html" class="nav-link link-dark px-2"><i class="bi bi-person nav-item survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i></a></li>
+                    <li class="nav-item"><a href="panier.html" class="nav-link link-dark px-2"><i class="bi bi-cart survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class=" pb-3 pt-3 min-height">
+            <div class="container d-flex flex-wrap d-flex-column-sm justify-content-center align-items-center">
+                <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none img-fluid navbar-brand fade-in-image" href="#"><img src="img/logo-complet-mini.svg" alt="alt"></a>
+                <form class="col-12 col-sm-12 col-lg-auto position-relative" role="search">
+                    <a href="boutique.html" class="text-decoration-none">
+                        <span class="position-absolute top-50 start-0 translate-middle-y bi bi-search ms-2 text-muted"></span>
+                        <input type="search" class="form-control pl-4" aria-label="Search">
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-bg">
+            <div class="espace"></div>
+            <div class="container">
+                <div>
+                    <h1 class="fs-1 text-center mb-4 mb-md-5">Choisissez nos plus belles compositions!</h1>
+                </div>
+                <div class="row mx-md-5">
+                    <div class="col-12 align-items-center">
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-bs-interval="5000">
+                            <div class="carousel-indicators espace">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active d-flex mask justify-content-center align-items-center h-md-100 h-sm-150">
+                                    <video class="d-block w-100" autoplay muted loop>
+                                        <source src="video/video_fleur_5.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="bg col-12 col-lg-6">
+                                            <h2 class="fs-md-4">Pour toutes vos occasions</h2>
+                                            <p class="fw-bold color-font fs-md-5 mb-2">Une élégance assurée avec nos préparations florales.</p>
+                                        </div>
+                                        <a href="boutique.html" class="bouton btn btn-primary rounded-2 mt-md-3">
+                                            Voir notre boutique >
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <video class="d-block w-100" autoplay muted loop>
+                                        <source src="video/video_fleur_1.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption">
+                                        <div class="bg col-12 col-lg-6">
+                                            <h2 class="fs-md-4">Nous connaître</h2>
+                                            <p class="fw-bold color-font fs-sm-5">Découvrez notre passion pour l'art floral.</p>
+                                        </div>
+                                        <a href="a-propos.html" class="bouton btn btn-primary rounded-2 mt-md-3">
+                                            En savoir plus >
+                                       </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <video class="d-block w-100" autoplay muted loop>
+                                        <source src="video/video_fleur_2.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="container">
+                                        <div class="carousel-caption d-flex-row justify-content-center">
+                                            <div class="bg col-12 col-lg-6">
+                                                <h2 class="fs-sm-5 fs-md-4">Personnalisez votre commande!</h2>
+                                                <p class="fw-bold fs-sm-5 fs-md-4 color-font text-center">Exprimez vos envies selon l'occasion.</p>
+                                            </div>
+                                            <a href="accueil.html#commande" class="bouton btn btn-primary rounded-2 mt-md-3">
+                                                En savoir plus >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <section class="section-bg">
+            <div class="container">
+                <div class="espace"></div>
+                <div>
+                    <h2 class="fs-2 text-center mb-4 mb-md-5 pt-sm-5">La destination florale où les rêves s'épanouissent!</h2>
+                </div>
+                <div class="row mx-5 d-flex-wrap-sm d-inline-md">
+                    <div class="col-sm-12 col-md-12 col-xl-4 d-flex align-items-center mb-5">
+                        <div class="card bg-transparent pe-lg-5 border-0">
+                            <div class="card-body d-flex flex-wrap justify-content-center justify-content-md-center justify-content-sm-center">
+                                <h3 class="fs-3 card-title text-center text-xl-start mb-3">Le bouquet parfait</h3>
+                                <p class="card-text text-center text-xl-start mb-4">Bienvenue chez Fleurs & Senteurs! Située au coeur de la ville de Trois-Rivières, notre charmante boutique de fleurs est un hâvre de beauté naturelle et d'arrangements artistiques. Que vous célébriez une étape importante, exprimiez vos condoléances ou simplement illuminiez la journée de quelqu'un, notre sélection variée de fleurs et de designs garantit le bouquet parfait pour chaque sentiment.</p>
+                                <p class="card-text text-center text-xl-start mb-4">Chez Fleurs & Senteurs, nous comprenons le langage des fleurs et les émotions qu'elles transmettent. Laissez-nous transformer vos moments en souvenirs avec la beauté intemporelle de la nature. Visitez-nous aujourd'hui et découvrez la magie de Fleurs & Senteurs - où chaque pétale raconte une histoire.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-8 d-flex d-flex-wrap-md justify-content-center align-items-center text-lg-center mx-auto">
+                        <img class="img-fluid shadow-lg" src="img/Images/fleurs1.jpg" alt="Fleurs séchées naturelles d'été">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-bg">
+            <div class="container">
+                <div class="espace"></div>
+                <div class="row d-flex d-flex-wrap-md">
+                    <div class="col-md-6 col-xl-8 align-items-lg-center justify-lg-center mx-auto hide">
+                        <div class="row g-3 pt-5 mx-auto img-center">
+                            <div class="col-12 col-md-6 mx-auto">
+                                <img class="img-fluid d-flex-wrap-md flex-lg-row mx-auto d-block img-center" src="img/Images/fleurs8.png" alt="Fleurs naturelles d'été">
+                            </div>
+                            <div class="col-12 col-md-6 align-items-center mx-auto">
+                                <img class="img-fluid mx-auto d-block img-center" src="img/Images/fleurs7.png" alt="Bouquet de fleurs">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-4 d-lg-flex align-items-center justify-content-sm-center text-sm-center text-lg-end">
+                        <div class="card bg-transparent justify-content-sm-center pe-lg-5 border-0 mx-auto">
+                            <div class="card-body d-flex flex-wrap justify-content-sm-center mx-auto">
+                                <h3 class="fs-3 card-title text-center text-xl-end mb-3">Quand valeurs riment avec fleurs</h3>
+                                <p class=" text-center text-xl-end mb-4">Fleurs & Senteurs ne se contente pas d'être une boutique florale ; c’est devenu au fil du temps un symbole de la beauté, de la créativité et de l'amour pour la nature.</p>
+                                <p class=" text-center text-xl-end mb-4 fw-bolder fst-italic">“Chez Fleurs & Senteurs, nous croyons que les fleurs ne sont pas simplement que des bourgeons ; ce sont des expressions d'amour, de joie et de célébration.”</p>
+                                <p class=" text-center text-xl-end mb-4">Nos fleuristes talentueux, animés par une passion pour la créativité, confectionnent méticuleusement chaque arrangement pour capturer l'essence de chaque occasion.</p>
+                                <a href="a-propos.html#valeurs" class="bouton btn btn-primary rounded-2 mt-md-3">
+                                    En savoir plus >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="espace-bottom"></div>
+        </section>
+        <section class="bg-sombre espace espace-bottom">
+            <div class="container">
+                <div class="espace"></div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10 col-xl-8 text-center">
+                        <h2 class="mb-4">Ils nous ont lancé des fleurs</h2>
+                        <p class="mb-4 pb-2 mb-md-5 pb-md-0 txt-allure2">
+                        Voici ce que les gens disent de nous.
+                        </p>
+                    </div>
+                </div>
+          
+                <div class="row text-center justify-content-center g-3">
+                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/photo_thumbnail/temoignage_julia.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                        </div>
+                        <p class="px-xl-3 txt-allure2">
+                            <i class="fas fa-quote-left pe-2"></i>Je suis ravie par le service exceptionnel. Leurs bouquets sont si ravissants et originaux!
+                        </p>
+                        <p class="fw-bolder txt-allure3 mb-0">Julia</p>
+                        <p class="mb-3 txt-allure1 mt-0">réceptionniste</p>
+                        
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt fa-sm txt-allure1"></i>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/photo_thumbnail/temoignage_marc.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                        </div>
+                        <p class="px-xl-3 txt-allure2">
+                            <i class="fas fa-quote-left pe-2"></i>Mon choix de prédilection pour un cadeau réfléchi ou spontané.  Ça ne déçoit jamais!
+                        </p>
+                        <p class="fw-bolder txt-allure3 mb-0">Marc</p>
+                        <p class="mb-3 txt-allure1 mt-0">entrepreneur</p>
+                        
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 col-md-3 mb-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="img/photo_thumbnail/temoignage_charlotte.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                        </div>
+                        <p class="px-xl-3 txt-allure2">
+                            <i class="fas fa-quote-left pe-2"></i>Ma nouvelle boutique préférée. J’y passerais tous mes temps libres si je le pouvais !
+                        </p>
+                        <p class="fw-bolder txt-allure3 mb-0">Charlotte</p>
+                        <p class="mb-3 txt-allure1 mt-0">étudiante</p>
+                        
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm txt-allure1"></i>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <div id="footer">
+            <footer>
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-md-12 col-lg-8 col-xl-8">
+                            <div class=" p-5">
+                                <h2 class="text-center text primary mb-3 h2-particulier">Commande personnalisée</h2>
+                                <div class="d-flex justify-content-center">
+                                    <div class="row col-12 mb-3">
+                                        <p class="text-center mb-4 txt-allure2">Pour une commande sur-mesure, laissez-nous vos coordonnées et précisez-nous votre vision.</p>
+                                    </div>
+                                </div>
+                                <form class="needs-validation">
+                                    <div class="row">
+                                        <div class="form-outline text-start col-md-6 col-sm-12">
+                                            <label class="form-label" for="name"></label>
+                                            <input type="text" id="name" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Nom" required/>
+                                        </div>
+                                        <div class="form-outline col-md-6 col-sm-12">
+                                            <label class="form-label" for="lastname"></label>
+                                            <input type="text" id="lastname" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Prénom" required/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-outline col-md-6 col-sm-12">
+                                            <label class="form-label" for="telephone"></label>
+                                            <input type="phone" id="telephone" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Téléphone" required/>
+                                        </div>
+                                        <div class="form-outline col-md-6 col-sm-12">
+                                            <label class="form-label" for="email"></label>
+                                            <input type="email" id="email" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="courriel" required/>
+                                        </div>
+                                    </div>
+                                    <label for="message" class="form-label"></label>
+                                    <textarea class="form-control form-control-lg fst-italic fw-light rounded-2" id="message" rows="5" placeholder="Message" required></textarea>
+                                    <div class="row">
+                                        <div class="form-outline col-md-6 col-sm-12">
+                                            <div class="col-md-10">
+                                                <label class="form-label" for="date"></label>
+                                                <input type="date" id="date" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Date attendue" required/>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-4 col-md-6 col-sm-12 justify-content-md-end justify-content-sm-center">
+                                            <button class="btn btn-primary rounded-2" type="submit">Envoyer ></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top container d-flex flex-column flex-md-row text-center-sx align-items-md-center"> 
+                        <div class="col-md-4 text-center text-md-start">
+                            <div class="d-flex justify-content-center justify-content-md-start mt-3">
+                                <a class="text-decoration-none mt-3">
+                                    <i class="bi bi-geo-alt mt-3" style="font-size: 30px; color:rgb(251, 167, 148);"></i>
+                                </a>
+                                <div class="flex-column ms-md-2 row col-md-12 justify-content-md-start mt-3">
+                                    <p class="mb-0 mt-2 text-muted txt-neutral">123 Boul. des Fleurs</p>
+                                    <p class="mb-0 text-muted txt-neutral">Trois-Rivières Qc J2B 0P3</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <a href="mailto:info@fleursetsenteurs.ca" class="text-decoration-none">
+                                    <i class="bi bi-envelope-fill mt-2" style="font-size: 27px; color:rgb(251, 167, 148);"></i>
+                                </a>
+                                <a href="mailto:info@fleursetsenteurs.ca" class="text-decoration-none ms-3 p-2 g-col-6 mt-1" href="#">info@fleursetsenteurs.ca</a>
+                            </div>
+                        </div>
+                        <div class="text-center col-md-4 align-self-md-center">
+                            <a href="#"><img src="/img/logo-simplifie.svg" alt="logo de Fleurs&Senteurs secondaire" class="logo-simplifie"></a>
+                            <div class="mt-2">
+                                <span>© 2023 Nathalie Jeantin & Geneviève Thibert</span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mt-3 text-center text-md-end mx-auto">
+                            <ul class="list-unstyled d-flex justify-content-md-end justify-content-center align-items-center">
+                                <li class="me-2 mb-2 mb-md-0">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="bi bi-youtube me-2" style="font-size: 32px; color:rgb(251, 167, 148);"></i>
+                                    </a>
+                                </li>
+                                <li class="me-2 mb-2 mb-md-0">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="bi bi-instagram" style="font-size: 30px; color:rgb(251, 167, 148);"></i>
+                                    </a>
+                                </li>
+                                <li class=" mb-2 mb-md-0">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="p-2 bi bi-facebook" style="font-size: 30px; color:rgb(251, 167, 148);"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+	<script src="js/index.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body> 
+</html>
+

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+//Écraser les variables par défaut AVANT d'importer Bootstrap
+
+$primary: rgb(178, 74, 56);
+$secondaire :rgb(251, 167, 148);
+$neutral: rgb(250, 238, 229);
+$tertiaire: rgb(106, 115, 92);
+$sombre: rgb(38, 17, 12);
+$fontprincipal: 'Playfair Display', serif;
+$fontsecondaire: 'Poppins', sans-serif;
+$headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; //import de Bootstrap
+
+
+
+
+.section-bg {
+  background-color: $neutral ;
+}
+
+.bg-sombre{
+
+  background-color: $sombre;
+}
+
+/* Navigation Menu Bootstrap */
+#mainNavigation a {
+    font-family: $fontprincipal;
+    font-size:19px;
+    text-align: center;
+  
+  }
+  
+.active{
+    color: $primary !important;
+    border: 1px solid;
+  }
+
+  .nav-item a{
+    color: $primary  !important;
+    margin: 5px;
+  }
+
+  .nav-item a:hover {
+    color: $sombre !important;
+    transition: all 0.6s linear;
+
+    padding: 5px;
+  }
+
+  .border-bottom {
+    color:$primary !important;
+
+  }
+
+  #mainNavigation {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    background: -moz-linear-gradient(top,  rgba(250, 238, 229,0.65) 0%, rgba(250, 238, 229,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(250, 238, 229,0.65) 0%,rgba(250, 238, 229,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(250, 238, 229,0.65) 0%,rgba(250, 238, 229,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-color:$secondaire;
+  }
+ 
+
+ /* Typologie & variables couleurs Bootstrap*/
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary !important;
+    font-family: $fontprincipal !important;
+}
+
+  .h2-particulier{
+ color: $secondaire !important;
+ font-family: $fontprincipal !important;
+  }
+
+ p {
+    color: $tertiaire !important;
+    font-family: $fontsecondaire;
+  }
+
+  footer, .txt-neutral {
+    color: $neutral !important;
+    font-size: 12px;
+  }
+
+  .bouton {
+    font-family: $fontsecondaire !important;
+  }
+
+ /* Personnalisation carousel Bootstrap*/
+
+  .carousel-indicators button {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+    margin: 0.6rem  !important;  
+ 
+
+  }
+  .carousel-indicators{
+    bottom: -20px;
+  }
+
+  /* Section des témoignages */
+
+.txt-allure1{
+  color: $secondaire !important;
+  font-family: $fontprincipal;
+}
+
+.txt-allure2{
+  color: $neutral !important;
+}
+
+.txt-allure3{
+  color: $primary !important;
+}
+
+  .section-diaporama{
+    min-height: 60vh;
+  }
+  
+
+  .espace-bottom-diaporama {
+    margin-bottom: 2vh;
+  } 
+
+.espace{
+  padding-top: 30px;
+}
+
+.espace-s{
+  padding-top: 10px;
+}
+
+  .color-font{
+    color: $tertiaire !important;
+  }
+
+  .bg{
+  
+    background: rgba(250, 238, 229, .4);
+    border-radius: 5px;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    background-clip: padding-box;
+    max-width: 70%;
+    margin: auto;
+  }
+
+
+
+   /* Section bg video*/
+
+  .video-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+
+
+
+  /* Personnalisation des Card Bootstrap*/
+
+.zoom {
+background-color: $secondaire;
+transition: transform .8s;
+}
+
+.zoom:hover{
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.15);
+}
+
+
+ /* Personnalisation tableau Bootstrap*/
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mask-custom {
+  background: rgba(106, 115, 92, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(106, 115, 92, 0.03);
+}
+
+
+
+
+/* Personnalisation survol bouton fermeture des popups en général*/
+
+.survol:hover{
+  color: $sombre !important;
+  background-color: $neutral;
+  transition: all 0.6s linear;
+  border: 1px solid $primary;
+  padding: 5px;
+}

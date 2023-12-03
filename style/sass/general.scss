@@ -76,14 +76,51 @@ input[type="date"]:focus::before {
   100% { opacity: 1; }
 }
 
+@media screen and (min-width: 1300px) {
+
+  .size-img{
+  
+    max-width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .size-img{
+  
+    max-width: 80%;
+  }
+
+}
+
+@media all and (min-width: 997px) and (max-width: 1200px) {
+
+  .size-img{
+  
+    max-width: 100%;
+  }
+
+} 
+@media screen and (max-width: 997px) {
+
+  .size-img{
+  
+    max-width: 100%;
+  }
+
+}
+
+
+
 @media screen and (max-width: 768px) {
 
-  .hide{
+ 
 
+  .hide{
+  
     display: none !important;
   }
  
 
 }
-
-

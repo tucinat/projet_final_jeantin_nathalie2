@@ -18,7 +18,7 @@
         <nav class="py-2 border-bottom border-primary">
             <div class="container d-flex flex-wrap">
                 <ul class="nav me-auto align-items-center">
-                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">À propos</a></li>
+                    <li class="nav-item"><a href="a-propos.html" class="nav-link link-dark px-2 survol" aria-current="page">À propos</a></li>
                     <li class="nav-item"><a href="boutique.html" class="nav-link link-dark px-2 survol">Boutique</a></li>
                 </ul>
                 <ul class="nav">
@@ -32,8 +32,8 @@
                 <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none img-fluid navbar-brand fade-in-image" href="#"><img src="img/logo-complet-mini.svg" alt="alt"></a>
                 <form class="col-12 col-sm-12 col-lg-auto position-relative" role="search">
                     <a href="boutique.html" class="text-decoration-none">
-                        <span class="position-absolute top-50 start-0 translate-middle-y bi bi-search ms-2 text-muted"></span>
-                        <input type="search" class="form-control pl-4" aria-label="Search">
+                        <span class="position-absolute top-50 justify-content-start start-0 translate-middle-y bi bi-search ms-2 text-muted"></span>
+                        <input id="#search" type="search" class="form-control decalage" aria-label="Search" placeholder="Rechercher...">
                     </a>
                 </form>
             </div>
@@ -48,11 +48,11 @@
                 </div>
                 <div class="row mx-md-5">
                     <div class="col-12 align-items-center">
-                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div id="carouselAvecIndicators" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-bs-interval="4000">
                             <div class="carousel-indicators espace">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselAvecIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselAvecIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselAvecIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active d-flex mask justify-content-center align-items-center h-md-100 h-sm-150">
@@ -95,18 +95,18 @@
                                                 <h2 class="fs-sm-5 fs-md-4">Personnalisez votre commande!</h2>
                                                 <p class="fw-bold fs-sm-5 fs-md-4 color-font text-center">Exprimez vos envies selon l'occasion.</p>
                                             </div>
-                                            <a href="accueil.html#commande" class="bouton btn btn-primary rounded-2 mt-md-3">
+                                            <a href="#commande-personnalisee" class="bouton btn btn-primary rounded-2 mt-md-3">
                                                 En savoir plus >
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAvecIndicators" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselAvecIndicators" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -163,7 +163,6 @@
                         <a href="a-propos.html#valeurs" class="bouton btn btn-primary rounded-2 mt-md-3">
                             En savoir plus >
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -182,14 +181,14 @@
                 </div>
           
                 <div class="row text-center justify-content-center g-3">
-                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0">
+                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0 zoom">
                         <div class="d-flex justify-content-center mb-4">
-                            <img src="img/photo_thumbnail/temoignage_julia.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                            <img src="img/photo_thumbnail/temoignage_julia.png" class="rounded-circle shadow-1-strong" alt="Photographie de Julia" width="100" height="100" />
                         </div>
                         <p class="px-xl-3 txt-allure2">
                             <i class="fas fa-quote-left pe-2"></i>Je suis ravie par le service exceptionnel. Leurs bouquets sont si ravissants et originaux!
                         </p>
-                        <p class="fw-bolder txt-allure3 mb-0">Julia</p>
+                        <p class="fw-bolder txt-allure1 mb-0">Julia</p>
                         <p class="mb-3 txt-allure1 mt-0">réceptionniste</p>
                         
                         <ul class="list-unstyled d-flex justify-content-center mb-0">
@@ -210,14 +209,14 @@
                         </li>
                         </ul>
                     </div>
-                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0">
+                    <div class="col-sm-8 col-md-3 mb-5 mb-md-0 zoom">
                         <div class="d-flex justify-content-center mb-4">
-                            <img src="img/photo_thumbnail/temoignage_marc.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                            <img src="img/photo_thumbnail/temoignage_marc.png" class="rounded-circle shadow-1-strong" alt="Photographie de Marc" width="100" height="100" />
                         </div>
                         <p class="px-xl-3 txt-allure2">
-                            <i class="fas fa-quote-left pe-2"></i>Mon choix de prédilection pour un cadeau réfléchi ou spontané.  Ça ne déçoit jamais!
+                            <i class="fas fa-quote-left pe-2"></i>Mon choix de prédilection pour un cadeau réfléchi ou spontané. Ça ne déçoit jamais!
                         </p>
-                        <p class="fw-bolder txt-allure3 mb-0">Marc</p>
+                        <p class="fw-bolder txt-allure1 mb-0">Marc</p>
                         <p class="mb-3 txt-allure1 mt-0">entrepreneur</p>
                         
                         <ul class="list-unstyled d-flex justify-content-center mb-0">
@@ -238,14 +237,14 @@
                         </li>
                         </ul>
                     </div>
-                    <div class="col-sm-8 col-md-3 mb-0">
+                    <div class="col-sm-8 col-md-3 mb-0 zoom">
                         <div class="d-flex justify-content-center mb-4">
-                            <img src="img/photo_thumbnail/temoignage_charlotte.png" class="rounded-circle shadow-1-strong" width="100" height="100" />
+                            <img src="img/photo_thumbnail/temoignage_charlotte.png" class="rounded-circle shadow-1-strong" alt="Photographie de Charlotte" width="100" height="100" />
                         </div>
                         <p class="px-xl-3 txt-allure2">
                             <i class="fas fa-quote-left pe-2"></i>Ma nouvelle boutique préférée. J’y passerais tous mes temps libres si je le pouvais !
                         </p>
-                        <p class="fw-bolder txt-allure3 mb-0">Charlotte</p>
+                        <p class="fw-bolder txt-allure1 mb-0">Charlotte</p>
                         <p class="mb-3 txt-allure1 mt-0">étudiante</p>
                         
                         <ul class="list-unstyled d-flex justify-content-center mb-0">
@@ -276,7 +275,7 @@
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-12 col-md-12 col-lg-8 col-xl-8">
                             <div class=" p-5">
-                                <h2 class="text-center text primary mb-3 h2-particulier">Commande personnalisée</h2>
+                                <h2 id="commande-personnalisee" class="text-center text primary mb-3 h2-particulier">Commande personnalisée</h2>
                                 <div class="d-flex justify-content-center">
                                     <div class="row col-12 mb-3">
                                         <p class="text-center mb-4 txt-allure2">Pour une commande sur-mesure, laissez-nous vos coordonnées et précisez-nous votre vision.</p>
@@ -300,7 +299,7 @@
                                         </div>
                                         <div class="form-outline col-md-6 col-sm-12">
                                             <label class="form-label" for="email"></label>
-                                            <input type="email" id="email" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="courriel" required/>
+                                            <input type="email" id="email" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Courriel" required/>
                                         </div>
                                     </div>
                                     <label for="message" class="form-label"></label>
@@ -369,7 +368,7 @@
             </footer>
         </div>
     </div>
-	<script src="js/index.js"></script>
+	<script src="js/fontionnalites.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body> 

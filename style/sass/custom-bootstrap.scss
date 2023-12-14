@@ -18,7 +18,9 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 @import "../../node_modules/bootstrap/scss/bootstrap"; //import de Bootstrap
 
 
-
+.border{
+  border:1px solid $primary !important;
+}
 
 .section-bg {
   background-color: $neutral ;
@@ -26,6 +28,14 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 
 .bg-sombre{
 
+  background-color: $sombre;
+}
+
+.section-valeurs{
+  background-color: $tertiaire;
+}
+
+.bg-box{
   background-color: $sombre;
 }
 
@@ -50,14 +60,24 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   .nav-item a:hover {
     color: $sombre !important;
     transition: all 0.6s linear;
-
     padding: 5px;
   }
 
   .border-bottom {
     color:$primary !important;
-
   }
+
+  .decalage::placeholder{
+  padding: 25px;
+  }
+    
+  .decalage::-webkit-input-placeholder { /* Edge */
+    padding: 25px;
+    }
+    
+   .decalage:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    padding: 25px;
+    } 
 
   #mainNavigation {
     position:relative;
@@ -84,7 +104,7 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   }
 
  p {
-    color: $tertiaire !important;
+    color: $sombre !important;
     font-family: $fontsecondaire;
   }
 
@@ -104,9 +124,8 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
     height: 10px!important;
     border-radius: 50%;
     margin: 0.6rem  !important;  
- 
-
   }
+
   .carousel-indicators{
     bottom: -20px;
   }
@@ -126,14 +145,37 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   color: $primary !important;
 }
 
-  .section-diaporama{
-    min-height: 60vh;
-  }
+.section-diaporama{
+  min-height: 60vh;
+}
   
 
-  .espace-bottom-diaporama {
-    margin-bottom: 2vh;
-  } 
+  /* page boutique */
+
+.prix{
+  color: $sombre !important;
+  font-family: $fontsecondaire;
+  font-weight: 900;
+}
+
+.nom-bouquet{
+  color: $tertiaire !important;
+  font-family: $fontsecondaire !important;
+  font-weight: 700;
+}
+
+/* page Inscription-connexion */
+
+
+
+.txt-color {
+  color: $sombre !important;
+  font-weight: 800;
+}
+
+.espace-bottom-diaporama {
+  margin-bottom: 2vh;
+} 
 
 .espace{
   padding-top: 30px;
@@ -143,30 +185,66 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   padding-top: 10px;
 }
 
-  .color-font{
-    color: $tertiaire !important;
-  }
+.color-font{
+  color: $tertiaire !important;
+}
 
-  .bg{
-  
-    background: rgba(250, 238, 229, .4);
-    border-radius: 5px;
-    backdrop-filter: blur(40px);
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    background-clip: padding-box;
-    max-width: 70%;
-    margin: auto;
-  }
+.bg{
+
+  background: rgba(250, 238, 229, .4);
+  border-radius: 5px;
+  backdrop-filter: blur(40px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  max-width: 70%;
+  margin: auto;
+}
 
 
+/* Page à propos */
 
-   /* Section bg video*/
+.txt-valeurs{
+  color: $neutral !important;
+  font-size: 0.8rem !important;
+}
 
-  .video-section {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
+.txt-color-neutral{
+
+  color: $neutral !important;
+}
+
+/* Page Panier */
+
+.ecriture1{
+  font-family: 'Times New Roman';
+  color: $neutral;
+}
+
+.ecriture2{
+  font-family: Arial;
+  color: $neutral !important;
+}
+
+.bg-text-miroir{
+  background-color: $neutral !important;
+  border-radius: 10px;
+  color: $primary !important;
+  border: 3px solid $secondaire;
+      padding: 158px;
+      margin-top: 20px;
+      font-size: 25px;
+      max-height: 170px;
+
+      
+}
+
+/* Section bg video*/
+
+.video-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .video {
@@ -190,7 +268,7 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   /* Personnalisation des Card Bootstrap*/
 
 .zoom {
-background-color: $secondaire;
+
 transition: transform .8s;
 }
 
@@ -201,7 +279,8 @@ transition: transform .8s;
 }
 
 
- /* Personnalisation tableau Bootstrap*/
+/* Personnalisation tableau Bootstrap*/
+
 table td,
 table th {
   text-overflow: ellipsis;
@@ -221,7 +300,7 @@ table th {
 
 
 
-/* Personnalisation survol bouton fermeture des popups en général*/
+/* Personnalisation survol*/
 
 .survol:hover{
   color: $sombre !important;
@@ -230,3 +309,11 @@ table th {
   border: 1px solid $primary;
   padding: 5px;
 }
+
+.custom-border {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+

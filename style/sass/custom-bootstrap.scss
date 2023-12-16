@@ -67,17 +67,27 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
     color:$primary !important;
   }
 
-  .decalage::placeholder{
-  padding: 25px;
-  }
-    
-  .decalage::-webkit-input-placeholder { /* Edge */
-    padding: 25px;
-    }
-    
-   .decalage:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    padding: 25px;
-    } 
+  .decalage {
+    text-indent: 30px;
+}
+
+/* Style pour le survol */
+.hover-search:hover {
+  background-color: rgb(250, 214, 206);
+  
+  transition: all 0.6s linear;
+}
+
+.btn-secondary {
+  background-color: white !important;
+  color: $primary !important;
+  border-color: $neutral !important;
+}
+
+.btn-secondary:hover{
+  background-color:#F9CFC1 !important;
+  transition: all 0.6s linear;
+}
 
   #mainNavigation {
     position:relative;
@@ -110,7 +120,7 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 
   footer, .txt-neutral {
     color: $neutral !important;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .bouton {
@@ -149,7 +159,6 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   min-height: 60vh;
 }
   
-
   /* page boutique */
 
 .prix{
@@ -165,8 +174,6 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 }
 
 /* page Inscription-connexion */
-
-
 
 .txt-color {
   color: $sombre !important;
@@ -199,7 +206,6 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   max-width: 70%;
   margin: auto;
 }
-
 
 /* Page à propos */
 
@@ -238,34 +244,7 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
       
 }
 
-/* Section bg video*/
-
-.video-section {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container.content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-}
-
-
-
-
-  /* Personnalisation des Card Bootstrap*/
+  /* effet de zoom */
 
 .zoom {
 
@@ -278,28 +257,6 @@ transition: transform .8s;
   transform: scale(1.15);
 }
 
-
-/* Personnalisation tableau Bootstrap*/
-
-table td,
-table th {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.mask-custom {
-  background: rgba(106, 115, 92, .2);
-  border-radius: 2em;
-  backdrop-filter: blur(30px);
-  border: 2px solid rgba(255, 255, 255, 0.05);
-  background-clip: padding-box;
-  box-shadow: 10px 10px 10px rgba(106, 115, 92, 0.03);
-}
-
-
-
-
 /* Personnalisation survol*/
 
 .survol:hover{
@@ -308,12 +265,6 @@ table th {
   transition: all 0.6s linear;
   border: 1px solid $primary;
   padding: 5px;
-}
-
-.custom-border {
-  border: 2px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
 }
 
 

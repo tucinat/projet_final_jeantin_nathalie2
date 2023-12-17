@@ -22,8 +22,8 @@
                     <li class="nav-item"><a href="boutique.html" class="nav-link link-dark px-2 survol">Boutique</a></li>
                 </ul>
                 <ul class="nav">
-                    <li class="nav-item"><a href="inscription-connexion.html" class="nav-link link-dark px-2"><i class="bi bi-person nav-item survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i></a></li>
-                    <li class="nav-item"><a href="panier.html" class="nav-link link-dark px-2"><i class="bi bi-cart survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i></a></li>
+                    <li class="nav-item"><a href="inscription-connexion.html" class="nav-link link-dark px-2"><i class="bi bi-person nav-item survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i><span class="hide-description">Lien vers page inscription et connexion</span></a></li>
+                    <li class="nav-item"><a href="panier.html" class="nav-link link-dark px-2"><i class="bi bi-cart survol" style="font-size: 28px; color:rgb(178, 74, 56);"></i><span class="hide-description">Lien vers page panier</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -31,10 +31,10 @@
             <div class="container d-flex flex-wrap d-flex-column-sm justify-content-center align-items-center">
                 <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none img-fluid navbar-brand fade-in-image"><img src="img/logo-complet-mini.svg" alt="Logo Fleurs & Senteurs"></a>
                 <form class="col-12 col-sm-12 col-lg-auto position-relative" role="search">
-                    <a href="boutique.html" class="text-decoration-none">
-                        <span class="position-absolute top-50 justify-content-start start-0 translate-middle-y bi bi-search ms-2 text-muted"></span>
-                        <input id="#search" type="search" class="form-control decalage" aria-label="Search" placeholder="Rechercher...">
-                    </a>
+                    <div class="input-group">
+                        <a href="boutique.html" class="btn btn-secondary bi bi-search"><span class="hide-description">Lien vers page boutique</span></a>
+                        <input id="#search" type="search" class="form-control font-search" placeholder="Rechercher..."  aria-label="Search">
+                    </div>
                 </form>
             </div>
         </nav>
@@ -63,13 +63,12 @@
 
         </section>
         <section class="pt-5 section-bg">
-            <div>
-                <div class="row g-0 justify-content-center">
-                    <img class="img-fluid col-3" src ="img/images/presentation_2.png" alt="La manière de faire un bouquet">
-                    <img class="img-fluid col-3" src ="img/images/bouquet_18.png" alt="Bouquet vif de couleurs">   
-                    <img class="img-fluid col-3" src ="img/images/presentation_4.png" alt="Composition">
-                    <img class="img-fluid col-3" src ="img/images/bouquet_17.png" alt="Création du bouquet céleste">
-                </div>
+            <div class="row g-0 justify-content-center">
+                <img class="img-fluid col-3" src ="img/images/presentation_2.png" alt="La manière de faire un bouquet">
+                <img class="img-fluid col-3" src ="img/images/bouquet_18.png" alt="Bouquet vif de couleurs">   
+                <img class="img-fluid col-3" src ="img/images/presentation_4.png" alt="Composition">
+                <img class="img-fluid col-3" src ="img/images/bouquet_17.png" alt="Création du bouquet céleste">
+            </div>
         </section>
         <section class="section-bg">
             <div class="container">
@@ -108,8 +107,8 @@
 
                         <div class="col-9 flex-wrap align-items-center bg-box col-4 col-sm-12 col-md-8 col-lg-6 col-xl-3 px-5 py-3 mx-2">
                             <img src="/img/Icônes/icone_valeur_sensibilite.svg" alt="Icône sensibilité" class="size-icone">
-                            <h3 class="fs-3 mb-0">Sensibilité</h3>
-                            `<p class="txt-valeurs">Notre délicate sensibilité artistique donne vie à des bouquets uniques, capturant les nuances subtiles de la nature.</p>
+                            <h3 class="fs-3 mb-3">Sensibilité</h3>
+                            <p class="txt-valeurs">Notre délicate sensibilité artistique donne vie à des bouquets uniques, capturant les nuances subtiles de la nature.</p>
                         </div>
 
                         <div class="col-9 flex-wrap align-items-center bg-box col-4 col-sm-12 col-md-8 col-lg-6 col-xl-3 px-5 py-3 mx-2">
@@ -135,41 +134,44 @@
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-12 col-md-12 col-lg-8 col-xl-8">
                         <div class=" p-5">
-                            <h2 class="text-center text primary mb-3 h2-particulier">Commande personnalisée</h2>
+                            <h2 id="commande-personnalisee" class="text-center text primary mb-3 h2-particulier">Commande personnalisée</h2>
                             <div class="d-flex justify-content-center">
                                 <div class="row col-12 mb-3">
                                     <p class="text-center mb-4 txt-allure2">Pour une commande sur-mesure, laissez-nous vos coordonnées et précisez-nous votre vision.</p>
                                 </div>
                             </div>
                             <form class="needs-validation">
-                                <div class="row">
-                                    <div class="form-outline text-start col-md-6 col-sm-12">
-                                        <label class="form-label" for="name"></label>
+                                <div class="row mb-sm-2 mb-md-4">
+                                    <div class="form-outline text-start col-md-6 mb-4 col-sm-12 mb-sm-4 mb-md-0">
+                                        <label class="form-label hide-label" for="name">Nom</label>
                                         <input type="text" id="name" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Nom" required/>
                                     </div>
-                                    <div class="form-outline col-md-6 col-sm-12">
-                                        <label class="form-label" for="lastname"></label>
+                                    <div class="form-outline col-md-6 col-sm-12 mb-4 mb-sm-4 mb-md-0">
+                                        <label class="form-label  hide-label" for="lastname">Prénom</label>
                                         <input type="text" id="lastname" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Prénom" required/>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="form-outline col-md-6 col-sm-12">
-                                        <label class="form-label" for="telephone"></label>
-                                        <input type="phone" id="telephone" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Téléphone" required/>
+                                <div class="row mb-sm-2 mb-md-4">
+                                    <div class="form-outline col-md-6 col-sm-12 mb-4 mb-sm-4 mb-md-0">
+                                        <label class="form-label hide-label" for="tel">Téléphone</label>
+                                        <input type="tel" id="tel" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Téléphone" required/>
                                     </div>
-                                    <div class="form-outline col-md-6 col-sm-12">
-                                        <label class="form-label" for="email"></label>
+                                    <div class="form-outline col-md-6 col-sm-12 mb-4 mb-sm-4 mb-md-0">
+                                        <label class="form-label hide-label" for="email">Courriel</label>
                                         <input type="email" id="email" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Courriel" required/>
                                     </div>
                                 </div>
-                                <label for="message" class="form-label"></label>
-                                <textarea class="form-control form-control-lg fst-italic fw-light rounded-2" id="message" rows="5" placeholder="Message" required></textarea>
+                                <div>
+                                    <label for="message" class="form-label hide-label">Message</label>
+                                    <textarea class="form-control form-control-lg fst-italic fw-light rounded-2" id="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
                                 <div class="row">
                                     <div class="form-outline col-md-6 col-sm-12">
-                                        <div class="col-md-10">
-                                            <label class="form-label" for="date"></label>
-                                            <input type="date" id="date" class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Date attendue" required/>
+                                        <div class="col-md-10 mt-4">
+                                            <label class="form-label hide-label" for="date">Date attendue</label>
+                                            <input class="form-control form-control-lg fst-italic fw-light rounded-2" placeholder="Date attendue" type="text" onfocus="(this.type = 'date')"  id="date">
                                         </div>
+                                        
                                     </div>
                                     <div class="d-flex mt-4 col-md-6 col-sm-12 justify-content-md-end justify-content-sm-center">
                                         <button class="btn btn-primary rounded-2" type="submit">Envoyer ></button>
@@ -192,13 +194,14 @@
                         </div>
                         <div class="d-flex justify-content-center justify-content-md-start">
                             <a href="mailto:info@fleursetsenteurs.ca" class="text-decoration-none">
+                                <span class="hide-description">Lien vers messagerie</span>
                                 <i class="bi bi-envelope-fill mt-2" style="font-size: 27px; color:rgb(251, 167, 148);"></i>
                             </a>
-                            <a href="mailto:info@fleursetsenteurs.ca" class="text-decoration-none ms-3 p-2 g-col-6 mt-1" href="#">info@fleursetsenteurs.ca</a>
+                            <a href="mailto:info@fleursetsenteurs.ca" class="text-decoration-none ms-3 p-2 g-col-6 mt-1">info@fleursetsenteurs.ca</a>
                         </div>
                     </div>
                     <div class="text-center col-md-4 align-self-md-center">
-                        <a href="index.html"><img src="/img/logo-simplifie.svg" alt="logo de Fleurs&Senteurs secondaire" class="logo-simplifie"></a>
+                        <a href="#"><img src="/img/logo-simplifie.svg" alt="logo de Fleurs&Senteurs secondaire" class="logo-simplifie"></a>
                         <div class="mt-2">
                             <span>© 2023 Nathalie Jeantin & Geneviève Thibert</span>
                         </div>
@@ -208,16 +211,19 @@
                         <ul class="list-unstyled d-flex justify-content-md-end justify-content-center align-items-center">
                             <li class="me-2 mb-2 mb-md-0">
                                 <a class="text-decoration-none" href="#">
+                                    <span class="hide-description">Lien vers YouTube</span>
                                     <i class="bi bi-youtube me-2" style="font-size: 32px; color:rgb(251, 167, 148);"></i>
                                 </a>
                             </li>
                             <li class="me-2 mb-2 mb-md-0">
                                 <a class="text-decoration-none" href="#">
+                                    <span class="hide-description">Lien vers Instagram</span>
                                     <i class="bi bi-instagram" style="font-size: 30px; color:rgb(251, 167, 148);"></i>
                                 </a>
                             </li>
-                            <li class=" mb-2 mb-md-0">
+                            <li class="mb-2 mb-md-0">
                                 <a class="text-decoration-none" href="#">
+                                    <span class="hide-description">Lien vers Facebook</span>
                                     <i class="p-2 bi bi-facebook" style="font-size: 30px; color:rgb(251, 167, 148);"></i>
                                 </a>
                             </li>

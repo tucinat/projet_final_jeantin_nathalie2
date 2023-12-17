@@ -65,6 +65,44 @@ textarea{
   max-width: 70px;
 }
 
+ /* cache des labels de formulaires */
+
+.hide-label{
+  position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+ /* cache des descriptifs de liens */
+
+.hide-description {
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+  /* effet de zoom */
+
+  .zoom {
+
+    transition: transform .8s;
+    }
+    
+    .zoom:hover{
+      -ms-transform: scale(1); /* IE 9 */
+      -webkit-transform: scale(1); /* Safari 3-8 */
+      transform: scale(1.15);
+    }
+
+
 
 
  /* Animations des "Fades" */

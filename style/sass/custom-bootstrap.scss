@@ -72,11 +72,6 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 }
 
 /* Style pour le survol */
-.hover-search:hover {
-  background-color: rgb(250, 214, 206);
-  
-  transition: all 0.6s linear;
-}
 
 .btn-secondary {
   background-color: white !important;
@@ -87,6 +82,10 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 .btn-secondary:hover{
   background-color:#F9CFC1 !important;
   transition: all 0.6s linear;
+}
+
+.font-search{
+  font-family: $fontprincipal;
 }
 
   #mainNavigation {
@@ -168,7 +167,7 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
 }
 
 .nom-bouquet{
-  color: $tertiaire !important;
+  color: $sombre !important;
   font-family: $fontsecondaire !important;
   font-weight: 700;
 }
@@ -244,18 +243,6 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
       
 }
 
-  /* effet de zoom */
-
-.zoom {
-
-transition: transform .8s;
-}
-
-.zoom:hover{
-  -ms-transform: scale(1); /* IE 9 */
-  -webkit-transform: scale(1); /* Safari 3-8 */
-  transform: scale(1.15);
-}
 
 /* Personnalisation survol*/
 

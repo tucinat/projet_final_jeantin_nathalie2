@@ -1,6 +1,6 @@
 // ÉVÉNEMENT : écoute de la saisie de l utilisateur et recopie selon la police choisie
 
-var messageInput = document.getElementById('message');
+var messageInput = document.getElementById('autremessage');
 var textMiroir = document.getElementById('textMiroir');
 var radioTimesNewRoman = document.getElementById('timesNewRoman');
 var radioArial = document.getElementById('arial');

@@ -206,6 +206,31 @@ $headings-font-family:'Poppins', Verdana, Tahoma, sans-serif !important;
   margin: auto;
 }
 
+.traits {
+  color: $primary !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.traits:before, .traits:after{
+  margin: auto;
+  flex: 1 1;
+  content:"";
+  border-bottom: 1px solid;
+  
+}
+
+.traits:before{
+  margin-left: 5px;
+  margin-right: 10px;
+  
+}
+
+.traits:after{
+  margin-right:5px;
+  margin-left: 10px;
+}
+
 /* Page à propos */
 
 .txt-valeurs{

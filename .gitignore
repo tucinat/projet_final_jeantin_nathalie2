@@ -1,4 +1,4 @@
 #Ignorer les node_modules dans les commit Git
 node_modules
 
-#Ignorer le css généré
+#Ignorer le css généré(retiré pour gitpages)
